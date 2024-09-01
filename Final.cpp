@@ -1,6 +1,6 @@
 #include <iostream>
-#include<set>
-#include<cstdio>
+#include <set>
+#include <cstdio>
 #include <iomanip>
 #include <string>
 #include <fstream>
@@ -431,92 +431,6 @@ void profile(string id)
     in.close();
 }
 
-
-// void SORT()
-// {
-//     ifstream in("income.txt");
-//     Transaction t1;
-//     vector<Transaction> v;
-//     while (in >> t1.userId >> t1.transactionId >> t1.transactionDate >> t1.title >> t1.description >> t1.accountId >> t1.entryDate >> t1.amount >> t1.recieveFrom_or_SentTo)
-//     {
-//         string date;
-//         date=t1.transactionDate.substr(6,4)+t1.transactionDate.substr(3,2)+t1.transactionDate.substr(0,2);
-//         t1.transactionDate=date;  
-//         v.push_back(t1);      
-//     }
-//     in.close();
-//     for(int i=0;i<v.size()-1;i++)
-//     {
-//         bool f=false;
-//         for(int j=0;j<v.size()-i-1;j++)
-//         {
-//             if(v[j].transactionDate > v[j+1].transactionDate)
-//             {
-//                 auto t=v[j];
-//                 v[j]= v[j+1];
-//                 v[j+1]=t;
-//                 f=true;
-//             }
-
-//         }if(!f)
-//         {
-//             break;
-//         }
-//     }
-
-//     ofstream out("income.txt");
-//     for(int i=0;i<v.size();i++)
-//     {
-//         string date;
-//         date=v[i].transactionDate.substr(6,2)+"-"+v[i].transactionDate.substr(4,2)+"-"+v[i].transactionDate.substr(0,4);
-    
-
-//         out<<v[i].userId<<" "<<v[i].transactionId<<" "<<v[i].title<<" " <<v[i].description<<" "<<v[i].accountId<<" "<<v[i].entryDate<<" "<<v[i].amount<<" "<<v[i].recieveFrom_or_SentTo<<endl; 
-//     }out.close();
-
-
-//     ifstream inn("expense.txt");
-//     Transaction t2;
-//     vector<Transaction> v1;
-//     while (inn >> t2.userId >> t2.transactionId >> t2.transactionDate >> t2.title >> t2.description >> t2.accountId >> t2.entryDate >> t2.amount >> t2.recieveFrom_or_SentTo)
-//     {
-//         string date;
-//         date=t2.transactionDate.substr(6,4)+t2.transactionDate.substr(3,2)+t2.transactionDate.substr(0,2);
-//         t2.transactionDate=date;  
-//         v1.push_back(t1);      
-//     }inn.close();
-//     for(int i=0;i<v1.size()-1;i++)
-//     {
-//         bool f=false;
-//         for(int j=0;j<v1.size()-i-1;j++)
-//         {
-//             if(v1[j].transactionDate > v1[j+1].transactionDate)
-//             {
-//                 auto t=v1[j];
-//                 v1[j]= v1[j+1];
-//                 v1[j+1]=t;
-//                 f=true;
-//             }
-
-//         }if(!f)
-//         {S
-//             break;
-//         }
-//     }
-
-//     ofstream outt("expense.txt");
-//     for(int i=0;i<v1.size();i++)
-//     {
-//         string date;
-//         date=v1[i].transactionDate.substr(6,2)+"-"+v1[i].transactionDate.substr(4,2)+"-"+v1[i].transactionDate.substr(0,4);
-    
-
-//         outt<<v1[i].userId<<" "<<v1[i].transactionId<<" "<<v1[i].title<<" " <<v1[i].description<<" "<<v1[i].accountId<<" "<<v1[i].entryDate<<" "<<v1[i].amount<<" "<<v1[i].recieveFrom_or_SentTo<<endl; 
-//     }outt.close();
-    
-// }
-
-
 void SORT()
 {
     set<string> SetDate;
@@ -547,12 +461,6 @@ void SORT()
     
 
 }
-
-
-
-
-
-
 
 void dailyTransaction(string id)
 {
